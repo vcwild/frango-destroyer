@@ -17,5 +17,4 @@ defmodule FrangoDestroyer.Users.Get do
   def handle_response(:error) do
     {:error, "Invalid UUID"}
   end
-
 end

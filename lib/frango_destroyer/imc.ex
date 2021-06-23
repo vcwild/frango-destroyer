@@ -1,5 +1,4 @@
 defmodule FrangoDestroyer.IMC do
-
   def calculate(filename) do
     filename
     |> File.read()
@@ -29,5 +28,4 @@ defmodule FrangoDestroyer.IMC do
   end
 
   defp calculate_imc([name, height, weight]), do: {name, weight / (height * height)}
-
 end
