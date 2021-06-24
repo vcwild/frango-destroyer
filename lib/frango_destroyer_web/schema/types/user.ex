@@ -1,8 +1,6 @@
 defmodule FrangoDestroyerWeb.Schema.Types.User do
   use Absinthe.Schema.Notation
 
-  import_types FrangoDestroyerWeb.Schema.Types.Custom.UUID4
-
   @desc "User representation logic"
   object :user do
     field :id, non_null(:uuid4)

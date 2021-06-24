@@ -1,9 +1,17 @@
 defmodule FrangoDestroyerWeb.Schema.Types.Root do
   use Absinthe.Schema.Notation
 
-  alias FrangoDestroyerWeb.Resolvers.User, as: UserResolver
+  alias Crudry.Middlewares.TranslateErrors
 
-  import_types FrangoDestroyerWeb.Schema.Types.User
+  alias FrangoDestroyerWeb.Resolvers
+  alias Resolvers.User, as: UserResolver
+  alias Resolvers.Training, as: TrainingResolver
+
+  alias FrangoDestroyerWeb.Schema.Types
+
+  import_types Types.Custom.UUID4
+  import_types Types.User
+  import_types Types.Training
 
   @desc "Root query representation logic"
   object :root_query do
@@ -20,6 +28,14 @@ defmodule FrangoDestroyerWeb.Schema.Types.Root do
       arg :input, non_null(:create_user_input)
 
       resolve fn params, context -> UserResolver.create(params, context) end
+      middleware TranslateErrors
+    end
+
+    field :create_training, type: :training do
+      arg :input, non_null(:create_training_input)
+
+      resolve fn params, context -> TrainingResolver.create(params, context) end
+      middleware TranslateErrors
     end
   end
 end
