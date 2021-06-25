@@ -13,7 +13,7 @@ defmodule FrangoDestroyer.User do
     field :name, :string
     field :password, :string
 
-    has_one :training, Training
+    has_many :trainings, Training
 
     timestamps()
   end
