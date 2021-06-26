@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/github/repo-size/vcwild/frango-destroyer?color=%23E96418&style=flat-square" alt="repo size" />
   </div>
 
-**FrangoDestroyer** is a workout session management training app. Created with [Phoenix](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html), [Ecto](https://hexdocs.pm/ecto/), and a dockerized [Postgres](https://www.postgresql.org/) database.
+**FrangoDestroyer** is a GraphQL REST API for managing workout sessions. Created with [Phoenix](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html), [Ecto](https://hexdocs.pm/ecto/), and a dockerized [Postgres](https://www.postgresql.org/) database.
 
 ## Getting Started
 
@@ -33,6 +33,22 @@ docker-compose up -d
 ```sh
 mix archive.install hex phx_new 1.5.7
 ```
+
+#### Run the server
+
+In the project root folder, run:
+
+```sh
+mix phx.server
+```
+
+The API will be available at `https://localhost:4000`
+
+## Features
+
+- Create users
+- Create workout plan
+
 ## Contribute
 
 If you find any bugs or want to contribute, feel free to reach out and post an issue.
