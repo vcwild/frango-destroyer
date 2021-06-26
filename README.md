@@ -1,19 +1,43 @@
 # FrangoDestroyer
 
-To start your Phoenix server:
+  <div align="center">
+    <img src=".github/frangodestroyer.png" width="200px" />
+  </div>
+  <div align="center">
+    <img src="https://img.shields.io/github/languages/count/vcwild/frango-destroyer?color=%23E96418&style=flat-square" alt="languages" />
+    <img src="https://img.shields.io/github/license/vcwild/frango-destroyer?color=%23E96418&style=flat-square" alt="license" />
+    <img src="https://img.shields.io/github/repo-size/vcwild/frango-destroyer?color=%23E96418&style=flat-square" alt="repo size" />
+  </div>
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+**FrangoDestroyer** is a workout session management training app. Created with [Phoenix](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html), [Ecto](https://hexdocs.pm/ecto/), and a dockerized [Postgres](https://www.postgresql.org/) database.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## Getting Started
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+If you want to deploy the app locally, follow the instructions below.
 
-## Learn more
+### Requirements
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+- [Mix requirements](./mix.exs)
+- [Docker](https://www.docker.com/)
+- [Docker compose](https://docs.docker.com/compose/)
+- [Postgres database](https://hub.docker.com/_/postgres)
+
+#### Create Docker-Compose image from Docker Hub
+
+```sh
+docker-compose up -d
+```
+
+#### Install Phoenix from Mix archive
+
+```sh
+mix archive.install hex phx_new 1.5.7
+```
+## Contribute
+
+If you find any bugs or want to contribute, feel free to reach out and post an issue.
+
+## License
+
+Distributed under the GPL 3.0 License. See [LICENSE](/LICENSE) for more information.
+
