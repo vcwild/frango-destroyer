@@ -1,5 +1,3 @@
-# FrangoDestroyer
-
   <div align="center">
     <img src=".github/frangodestroyer.png" width="200px" />
   </div>
@@ -8,6 +6,8 @@
     <img src="https://img.shields.io/github/license/vcwild/frango-destroyer?color=%23E96418&style=flat-square" alt="license" />
     <img src="https://img.shields.io/github/repo-size/vcwild/frango-destroyer?color=%23E96418&style=flat-square" alt="repo size" />
   </div>
+
+# FrangoDestroyer
 
 **FrangoDestroyer** is a GraphQL REST API for managing workout sessions. Created with [Phoenix](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html), [Ecto](https://hexdocs.pm/ecto/), and a dockerized [Postgres](https://www.postgresql.org/) database.
 
